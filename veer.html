@@ -113,6 +113,14 @@ nav{
   font-family:'Playfair Display',serif;font-size:5rem;font-weight:900;
   color:var(--gold);position:relative;z-index:1;
   text-shadow:0 0 30px rgba(212,160,23,0.6);
+  overflow:hidden;
+}
+.avatar-inner img{
+  width:100%;height:100%;
+  object-fit:cover;
+  display:block;
+  border-radius:50%;
+  position:relative;z-index:2;
 }
 @keyframes floatFrame{0%,100%{transform:translateY(-50%) translateY(0)}50%{transform:translateY(-50%) translateY(-15px)}}
 @keyframes rotateGlow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
@@ -494,7 +502,9 @@ section{padding:6rem 3rem;position:relative}
   <!-- 3D Floating Frame -->
   <div style="position:absolute;right:10%;top:50%;transform:translateY(-50%)">
     <div class="vintage-frame">
-      <div class="avatar-inner">✦</div>
+      <div class="avatar-inner">
+        <img src="profile.png" alt="Profile photo">
+      </div>
     </div>
     <!-- orbit rings -->
     <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:280px;height:280px;border-radius:50%;border:1px dashed rgba(212,160,23,0.2);animation:rotateGlow 20s linear infinite;pointer-events:none"></div>
@@ -718,11 +728,12 @@ section{padding:6rem 3rem;position:relative}
   <div class="contact-inner reveal">
     <p class="contact-quote">"Every great story begins with a single introduction — yours could be the next chapter in mine."</p>
     <div class="contact-links">
-      <a href="mailto:hello@example.com" class="contact-link">
+      <a href="mailto:raosurveersingh@981.com" class="contact-link">
         <div class="contact-icon">✉</div>
         <span>Email</span>
       </a>
-      <a href="#" class="contact-link">
+      <a href="https://www.linkedin.com/in/surveersinghrao/" class="contact-link">
+      
         <div class="contact-icon">in</div>
         <span>LinkedIn</span>
       </a>
@@ -735,7 +746,7 @@ section{padding:6rem 3rem;position:relative}
         <span>Resume</span>
       </a>
     </div>
-    <a href="mailto:hello@example.com" class="btn-primary">Send Me a Letter →</a>
+    <a href="raosurveersingh@981.com" class="btn-primary">Send Me a Letter →</a>
     <div class="footer-line" style="margin-top:3rem">
       ◆ Crafted with patience & passion · 2025 ◆
     </div>
